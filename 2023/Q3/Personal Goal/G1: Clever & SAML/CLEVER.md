@@ -127,7 +127,34 @@ The `SocialLoginView` handles the entire OAuth flow and account creation/login a
 * **Missing profile data** - Enable necessary scopes in Clever app and configure `attribute_mapping`
 * **Login not working** - Try logging out completely and clearing cookies/cache
 
-Diagram
+## Code Examples
+
+Creating a CleverLoginView: Provide a code example for creating a custom view that handles Clever login and user registration.
+
+```class CleverLoginView(APIView):
+    def post(self, request):
+        # Clever authentication logic
+        # ...
+
+        # Create or update user profile
+        # ...
+
+        # Return authentication token
+        return Response({'token': token})
+```
+
+Custom Clever Authentication Backend: Example of a custom authentication backend for Clever login.
+
+```class CleverAuthenticationBackend(ModelBackend):
+    def authenticate_clever(self, request, clever_id, clever_token):
+        # Clever authentication logic
+        # ...
+
+        # Return user object
+        return user
+```
+
+## Diagram
 
 ```plain
     +-------------------+         +------------------------+
