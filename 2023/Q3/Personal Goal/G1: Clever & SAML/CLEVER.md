@@ -126,3 +126,66 @@ The `SocialLoginView` handles the entire OAuth flow and account creation/login a
 * **Authorization failure** - Check Clever app credentials and OAuth configuration
 * **Missing profile data** - Enable necessary scopes in Clever app and configure `attribute_mapping`
 * **Login not working** - Try logging out completely and clearing cookies/cache
+
+Diagram
+
+```plain
+    +-------------------+         +------------------------+
+    |   User's Browser  |         |     Django Server      |
+    +-------------------+         +------------------------+
+           |                          |
+           | Step 1: Initiate         |
+           | Clever Login by clicking|
+           | on "Login with Clever"  |
+           |------------------------->|
+           |                          |
+           |                          |
+           |                          |
+           |                          |
+           | Step 2: Redirect to      |
+           | Clever Authorization     |
+           | Endpoint                 |
+           |<-------------------------|
+           |                          |
+           |                          |
+           |                          |
+           |                          |
+           |                          |
+           | Step 3: User approves     |
+           | access and authenticates |
+           | on Clever                |
+           |------------------------->|
+           |                          |
+           |                          |
+           |                          |
+           |                          |
+           | Step 4: Clever sends      |
+           | Authorization Code to     |
+           | the Redirect URL          |
+           |<-------------------------|
+           |                          |
+           |                          |
+           |                          |
+           |                          |
+           | Step 5: Django Server     |
+           | exchanges Code for        |
+           | Access Token with Clever  |
+           |------------------------->|
+           |                          |
+           |                          |
+           |                          |
+           |                          |
+           |                          |
+           | Step 6: Clever sends      |
+           | Access Token to Django    |
+           |<-------------------------|
+           |                          |
+           |                          |
+           |                          |
+           |                          |
+           | Step 7: User is           |
+           | successfully logged in    |
+           | and can access resources  |
+           |------------------------->|
+           |                          |
+```
