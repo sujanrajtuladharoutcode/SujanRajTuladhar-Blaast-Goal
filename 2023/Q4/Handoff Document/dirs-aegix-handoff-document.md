@@ -461,19 +461,17 @@ All the environment variables, access keys and secret keys are stored in [Github
 
 ### Development
 
-* [PNG](architecture-diagram/project-architecture.png)
-* [JPG](architecture-diagram/project-architecture.jpg)
+* ![PNG](architecture-diagram/project-architecture.png)
 
 ## Docker Architecture Diagram
 
-* [PNG](architecture-diagram/dirs-architecture-docker.png)
-* [JPG](architecture-diagram/dirs-architecture-docker.jpg)
+* ![PNG](architecture-diagram/dirs-architecture-docker.png)
 
 ## Data Models
 
-* [ER Diagram 1](er-diagram/models.png)
-* [ER Diagram 2](er-diagram/models.dot.png)
-* [ER Diagram 3](er-diagram/models.fdp.png)
+* ![ER Diagram 1](er-diagram/models.png)
+* ![ER Diagram 2](er-diagram/models.dot.png)
+* ![ER Diagram 3](er-diagram/models.fdp.png)
 
 ## API Documentation
 
