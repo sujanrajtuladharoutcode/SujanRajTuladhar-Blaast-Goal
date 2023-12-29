@@ -5,6 +5,7 @@ channels-redis==4.1.0
 Django==5.0
 djangorestframework==3.14.0
 msgpack==1.0.7
+PyJWT==2.8.0
 pytz==2023.3.post1
 redis==5.0.1
 sqlparse==0.4.4

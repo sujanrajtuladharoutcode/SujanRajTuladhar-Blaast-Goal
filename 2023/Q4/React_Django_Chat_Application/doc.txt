@@ -28,6 +28,17 @@ Video 6
 
 Building a Secure Login API with Django REST and React
 
+Serializer for Login view
+Validate email and passoword
+
+custom authentication using tokenauthentication
+user of static method
+generate_token
+extract token
+verify token
+authenticate token
+login view
+
 
 
 
