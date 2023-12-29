@@ -49,8 +49,7 @@ Registering User with Django Rest Framework
 UseState
 BaseUrl
 HandleFormSubmit
+Make front-end register user work using axious and catch errors
 
-
-
-
+Install django-cors-headers on backend to allow cors
  
