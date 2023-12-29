@@ -1,0 +1,36 @@
+Video 4
+
+Install material ui
+setup bootstrap
+
+npm i axios
+
+Component
+Register.js
+App.js
+
+Used TextField, Button field on material ui along with bootstrap classes.
+
+---------------------
+
+Video 5
+
+Setting up API Endpoint for User Registration
+Registe accounts app and rest_framework in settings.py
+Learn about status code 201 and 400
+Learn about api_view
+Learn about postman extension on vs code
+Learn to make post request from postman to test register view and debug errors like attribute errors and page not found.
+
+---------------------
+
+Video 6
+
+Building a Secure Login API with Django REST and React
+
+
+
+
+
+
+ 

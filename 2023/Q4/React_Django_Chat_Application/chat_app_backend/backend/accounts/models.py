@@ -30,7 +30,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     date_joined = models.DateTimeField(auto_now_add=True)
     is_superuser = models.BooleanField(default=False)
 
-    object = UserManager()
+    objects = UserManager()
 
     USERNAME_FIELD = 'email'
 
