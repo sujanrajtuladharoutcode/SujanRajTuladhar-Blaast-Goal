@@ -38,8 +38,17 @@ extract token
 verify token
 authenticate token
 login view
+use of read only and write only on Serializer
 
+--------------------------
 
+Video 7
+
+Registering User with Django Rest Framework 
+
+UseState
+BaseUrl
+HandleFormSubmit
 
 
 
