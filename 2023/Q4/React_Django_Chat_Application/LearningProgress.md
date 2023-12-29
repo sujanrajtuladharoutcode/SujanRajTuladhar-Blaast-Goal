@@ -1,4 +1,8 @@
-# Project Progress
+# Learning Progress - Chat Application with React and Django
+
+## Overview
+
+I've been working on a chat application using React for the frontend, Django for the backend, and Django Channels for real-time communication. Here's a summary of what I've learned so far:
 
 ## 1. Project Setup - Python, Django, and React
 
@@ -46,3 +50,10 @@
 - Implemented a function (`HandleFormSubmit`) for handling form submissions.
 - Made the front-end user registration work using Axios and handled potential errors.
 - Installed `django-cors-headers` on the backend for Cross-Origin Resource Sharing (CORS) support.
+
+## Next Steps
+
+- Continue with the remaining videos in the series.
+- Explore Django Channels for real-time communication.
+- Experiment with additional React features for a more dynamic user interface.
+- Refine and expand the application's functionality based on project requirements.
