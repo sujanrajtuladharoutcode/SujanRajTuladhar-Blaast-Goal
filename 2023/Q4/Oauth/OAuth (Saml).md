@@ -524,7 +524,7 @@ class SAMLServiceProviderBackend(object):
             return None
 ```
 
-3. [urls.py](http://urls.py)
+3. urls.py
 
 ```python
 from django.conf.urls import url
@@ -541,7 +541,7 @@ urlpatterns = [
 ]
 ```
 
-4. [utils.py](http://utils.py)
+4. utils.py
 
 ```python
 import logging
@@ -654,7 +654,7 @@ class SAMLSettingsMixin(object):
         return saml_request
 ```
 
-5. [views.py](http://views.py)
+5. views.py
 
 ```python
 import logging
