@@ -1,0 +1,5 @@
+.vscode/
+.venv/
+env/
+venv/
+sp_*.cer

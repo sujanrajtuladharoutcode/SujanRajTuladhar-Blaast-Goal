@@ -1,0 +1,43 @@
+version: '3.8'  
+
+networks: # Networks to be created to facilitate communication between containers
+  chat: # Name of the network
+    driver: bridge # Type of the network
+
+volumes:
+  static_volume: {} # Volume for static files
+  media_volume: {} # Volume for media files
+  redis: {}  # Volume for Redis data
+
+
+services:
+
+  django: # Definition of the Django service
+    container_name: chat-django # Name of the Django container
+    build: # Build instructions
+      context: . # Location of the Dockerfile
+      dockerfile: .docker/Dockerfile # Name of the Dockerfile
+    # command: gunicorn --bind 0.0.0.0:8000 server.wsgi:application # Command to run
+    command: python manage.py runserver 0.0.0.0:8000 # Command to run
+    volumes: # Volumes to be mounted
+      - .:/opt/chat-backend # Location of the Django project
+      - static_volume:/opt/chat-backend/static # Location of the static files
+      - media_volume:/opt/chat-backend/media # Location of the media files
+    # env_file: # Environment variables
+    #  - ./.env # Location of the .env file
+    ports: # Ports to be exposed
+      - 8000:8000 # Port to be exposed
+    # depends_on: # Dependencies
+    #   - postgres # Dependency on the database
+    networks: # Networks to be attached
+      - chat # Network to be attached
+
+  redis:
+    container_name: chat-redis  # Name of the Redis container
+    image: redis
+    ports:
+      - 6379:6379  # Forwarding host port 6379 to container port 6379
+    volumes:
+      - redis:/data  # Mounting Redis data volume
+    networks:
+      - chat
