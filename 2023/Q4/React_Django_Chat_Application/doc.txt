@@ -53,3 +53,30 @@ Make front-end register user work using axious and catch errors
 
 Install django-cors-headers on backend to allow cors
  
+--------------------------
+
+video 8
+
+Login Users with Django REST API and reactjs 
+
+Create Login.js file 
+create login form 
+implement login and console response in log 
+
+--------------------------
+
+video 9
+
+React router dom in reactjs (Single page app)
+
+Learn about react route dom
+use BrowserRouter
+use Routes
+user of link tag instead of a tag
+
+--------------------------
+
+Video 10
+
+Chat Screen User Interface
+
