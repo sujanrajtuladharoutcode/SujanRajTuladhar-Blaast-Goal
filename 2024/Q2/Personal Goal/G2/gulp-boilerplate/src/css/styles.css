@@ -1,0 +1,887 @@
+@font-face {
+  font-family: "Dax Pro";
+  src: url("../fonts/Dax-Pro-Regular.ttf") format("woff2");
+  /* Add additional font weights and styles if needed */
+}
+@import url("./root.css");
+body {
+  font-family: "Dax Pro", sans-serif !important;
+}
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
+
+p {
+  margin-bottom: 0px !important;
+}
+.btn-ticket {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #ffa9a9, #ffe4e4);
+  background-color: transparent;
+  color: #000; /* Change text color as needed */
+  border-radius: 50px;
+  padding: 0px 32px;
+}
+
+header {
+  /* background: transparent
+    linear-gradient(180deg, #ffffff 0%, #ffffffcc 85%, #ffffff00 100%) 0% 0%
+    no-repeat padding-box; */
+  height: 180px;
+  background: transparent
+    linear-gradient(180deg, #ffffff 0%, #ffffffcc 85%, #ffffff00 100%) 0% 0%
+    no-repeat padding-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 80;
+}
+.header-container {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.header-container .logo-image {
+  height: 82px;
+  width: 264px;
+  margin-left: -7%;
+}
+.header-container .logo-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.header-container .menu-link {
+  display: flex;
+  gap: 12px;
+}
+.header-container .menu-link .link-list {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--textgray);
+}
+.banner-image {
+  height: 1080px;
+  width: 100%;
+}
+.banner-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.discuss-network-section {
+  padding: 140px 0px 138px 0px;
+}
+.discuss-network {
+  margin-bottom: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.discuss-network .discuss-network-title {
+  text-align: center;
+}
+.discuss-network .discuss-network-title p {
+  font-size: 38px;
+  color: var(--textDanger);
+  line-height: 42px;
+  font-weight: 600;
+}
+.discuss-network .discuss-network-image img {
+  height: 165px;
+  width: 252px;
+  object-fit: contain;
+}
+.banner-bottom {
+  background: transparent
+    linear-gradient(
+      180deg,
+      #ffffff00 0%,
+      var(--unnamed-color-ffffff) 51%,
+      #ffffff00 100%
+    )
+    0% 0% no-repeat padding-box;
+  background: transparent
+    linear-gradient(180deg, #ffffff00 0%, #ffffff 51%, #ffffff00 100%) 0% 0%
+    no-repeat padding-box;
+  opacity: 1;
+  position: absolute;
+  bottom: -50px;
+  left: 0px;
+  width: 100%;
+  height: 105px;
+}
+.banner-description {
+  position: absolute;
+  top: 285px;
+  left: 379px;
+}
+
+.banner-description {
+  color: var(--white);
+}
+.banner-description h3 {
+  width: max-content;
+  padding: 0px 5px;
+}
+.banner-description h1 {
+  width: max-content;
+  padding: 0px 5px;
+}
+.slide-image-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 49%;
+}
+.slide-image-right img {
+  height: 491px;
+  object-fit: cover;
+  width: 100%;
+}
+.slide-image-left img {
+  height: 491px;
+  width: 100%;
+  object-fit: cover;
+}
+.network-sales-content {
+  height: 491px;
+}
+.slide-image-left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 49%;
+}
+.discussing-networking {
+  padding-top: 100px;
+  padding-bottom: 134px;
+}
+
+.discussing-networking h2 {
+  width: 750px;
+  margin-bottom: 60px;
+}
+.discussing-networking-card .image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.discussing-networking-card .image img {
+  width: 72px;
+  height: 72px;
+}
+.discussing-networking-card h4 {
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+  color: var(--textgrayLight);
+  font-weight: 500;
+}
+.discussing-networking-card p {
+  font-size: 20px;
+  /* line-height: 300; */
+  font-weight: 300;
+  text-align: center;
+}
+
+.accordion-smartOptimo .accordion-item .accordion-header button {
+  background-color: var(--blue);
+  color: var(--white);
+  height: 81px;
+  padding: 0px 36px 0px 22px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 36px 36px 0px 0px !important;
+}
+
+.accordion-smartOptimo .accordion-item {
+  border: none !important;
+}
+/* Custom icon classes */
+.accordion-button::after {
+  content: url("../image/trangle.png") !important; /* Specify the path to your custom icon */
+  display: inline-block;
+  margin-left: auto;
+  transition: transform 0.3s ease;
+  transform: rotate(-0deg) !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none !important;
+}
+
+.accordion-button.collapsed::after {
+  transform: rotate(-180deg) !important;
+  background-image: none !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.topic-area-title {
+  display: flex;
+  gap: 24px;
+}
+.accordion-smartOptimo .accordion-collapse .accordion-body {
+  padding: 0px;
+  background-color: var(--accordionBody);
+}
+.accordion-smartOptimo .accordion-collapse .accordion-body-content {
+  padding: 24px 24px 0px 24px;
+}
+.accordion-smartOptimo .accordion-collapse .accordionBanner img {
+  height: 792px;
+  width: 100%;
+}
+.accordion-body-content-table tbody tr td:first-child {
+  padding-right: 24px;
+  display: flex;
+}
+
+.accordion-body-content-table {
+  border-collapse: separate; /* Ensures border-spacing works */
+  border-spacing: 0 32px; /* Adjust the row-gap (10px in this example) */
+}
+.forum-network-sales-section {
+  padding-bottom: 180px;
+}
+.speaker-section {
+  padding-bottom: 134px;
+}
+.speaker-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 25px;
+  row-gap: 43px;
+}
+.speaker-content .speaker-body .image {
+  height: 191px;
+  width: 100%;
+  margin-bottom: 7px;
+}
+.speaker-content .speaker-body .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.speaker-content .speaker-body h3 {
+  color: var(--blue);
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.speaker-content .speaker-body p {
+  color: var(--black);
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 500;
+}
+.before-network-sales-section {
+  padding-bottom: 135px;
+}
+.before-network-sales {
+  text-align: center;
+}
+.before-network-sales p {
+  font-size: 38px;
+  color: var(--textDanger);
+  line-height: 42px;
+  width: 598px;
+  font-weight: 600;
+}
+.exhibitor-description span a {
+  color: var(--blue);
+}
+.two-dot-list {
+  color: var(--textgray);
+  font-size: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+.two-dot-list::before {
+  position: absolute;
+  content: "";
+  top: 17px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--textDanger);
+}
+.two-dot-list::after {
+  position: absolute;
+  content: "";
+  top: 17px;
+  left: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--textDanger);
+}
+.exhibitor-section {
+  padding-bottom: 144px;
+}
+.map-image {
+  display: flex;
+  justify-content: center;
+  height: 616px;
+}
+.map-image img {
+  width: 302px;
+  height: 616px;
+  object-fit: fill;
+}
+.location-details {
+  padding-top: 38px;
+  padding-bottom: 24px;
+}
+.location-details h5 {
+  font-size: 18px;
+  color: var(--textgray1);
+  font-weight: 700;
+}
+.location-details h5 {
+  font-size: 18px;
+  color: var(--textgray1);
+}
+.location-details p {
+  font-size: 18px;
+  color: var(--textgray1);
+}
+.company-section {
+  padding-bottom: 143px;
+}
+.company-info img {
+  width: 77px;
+  height: 65px;
+  margin-bottom: 8px;
+}
+.company-info p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.company-info .tel {
+  color: var(--blue);
+}
+.company-info .email {
+  color: var(--textgray);
+}
+.accommodation-section {
+  padding-bottom: 94px;
+}
+.accommodation-title {
+  margin-bottom: 64px;
+}
+.accommodation-card .image-acc img {
+  height: 271px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px 25px 0px 0px;
+}
+.accommodation-card .location-details {
+  padding-top: 25px;
+}
+.accommodation-card .location-details p {
+  font-size: 20px;
+  color: var(--textgray);
+}
+.accommodation-price-date {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+}
+.accommodation-price-date p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+  color: var(--textgray);
+}
+.accommodation-image-location {
+  display: flex !important;
+  align-items: end;
+  height: 100%;
+}
+.accommodation-image-location img {
+  height: 460px;
+  margin-left: 220px;
+  width: 164px;
+}
+.pitches-section {
+  padding-bottom: 104px;
+}
+.pitches-title {
+  padding-bottom: 22px;
+}
+.pitches-location-details {
+  font-size: 20px;
+  color: var(--textgray1);
+}
+.pitches-location-details h4 {
+  font-weight: 600;
+}
+.pitches-image img {
+  width: 569px;
+  height: 403px;
+}
+.pitches-location-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.motorhome-section {
+  padding-bottom: 140px;
+}
+.motorhome-title {
+  width: 410px;
+  line-height: 55px;
+  padding-bottom: 64px;
+}
+/* .motorhome-title h2 {
+  line-height: normal;
+} */
+.motorhome-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+.motorhome-details {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+}
+.motorhome-details > div {
+  flex: auto;
+  padding-bottom: 16px;
+}
+.motorhome-details .btn-primary,
+.motorhome-details .btn-primary-outline {
+  height: 50px;
+}
+.motorhome-image {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100%;
+}
+
+.motorhome-image img {
+  width: 470px;
+  height: 219px;
+}
+footer {
+  background-color: var(--blue);
+  padding: 38px 0px 41px 0px;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-list h4 {
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 700;
+}
+.footer-list p {
+  color: var(--white);
+  font-size: 20px;
+}
+.footer-link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.footer-link img {
+  transform: matrix(0, 1, -1, 0, 0, 0);
+  height: 14px;
+}
+.footer-link p {
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 700;
+}
+.footer-social-link {
+  display: flex;
+  margin-top: 32px;
+  gap: 16px;
+}
+.copy-right {
+  position: relative;
+}
+.copy-right-text {
+  position: absolute;
+  font-size: 13px;
+  color: var(--white);
+  font-weight: 700;
+  left: 30px;
+  top: 7px;
+}
+.go-to-top {
+  position: fixed;
+  right: 0px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 100;
+}
+.to-top {
+  display: flex;
+  justify-content: center;
+}
+.to-top img {
+  height: 25px;
+  width: 60px;
+  object-fit: cover;
+  margin-left: 20px;
+}
+.call-info.show {
+  background-color: #54a1b2;
+  display: flex;
+  padding: 8px 16px 0px 16px;
+  color: var(--white);
+}
+
+.call-info img {
+  width: 118px;
+  height: 119px;
+  object-fit: cover;
+}
+.call-info.show img {
+  width: 118px;
+  height: 119px;
+  object-fit: cover;
+  margin-left: -65px;
+  margin-top: -8px;
+}
+.call-info.show .call-description {
+  padding-left: 16px;
+}
+.call-info .call-description {
+  display: none; /* Hide the description by default */
+  transition: all 1s ease; /* Add a smooth transition effect */
+}
+
+.call-info.show .call-description {
+  display: block; /* Show the description when 'show' class is present */
+  transition: all 0.3s ease; /* Add a smooth transition effect */
+}
+
+.call-description h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.call-description {
+  font-size: 16px;
+}
+.call-description h5 {
+  font-weight: 700;
+}
+.network-sales-image {
+  display: none;
+}
+.display-web {
+  display: block;
+}
+.display-mobile {
+  display: none !important;
+}
+.footer-list-social .footer-social-link {
+  display: none;
+}
+.footer-list-social .footer-list .footer-link {
+  display: none;
+}
+.copy-right-text.mobile-view {
+  display: none;
+}
+.motorhome-image-mobile {
+  display: none;
+}
+/* mobile view  */
+@media only screen and (max-width: 768px) {
+  .header-container {
+    display: block;
+  }
+  .container {
+    padding: 0px 36px !important;
+    max-width: 100% !important;
+  }
+  .header-container .logo-image {
+    height: 73px;
+    width: 236px;
+    margin-left: 0%;
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
+  .header-container .menu-link {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-container .menu-link .link-list {
+    font-size: 14px !important;
+  }
+  .banner-image {
+    height: 380px;
+    width: 100%;
+  }
+  .banner-bottom {
+    display: none;
+  }
+  .banner-description {
+    top: 200px;
+    left: 36px;
+  }
+  .banner-description h1 {
+    font-size: 20px;
+  }
+  .banner-description h3 {
+    font-size: 18px;
+  }
+  .discuss-network-section {
+    padding: 27px 0px 74px 0px;
+  }
+  .discuss-network {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .discuss-network .discuss-network-title {
+    order: 2;
+  }
+  .discuss-network .discuss-network-image {
+    margin-bottom: 30px;
+  }
+  .discuss-network .discuss-network-image img {
+    height: 61px;
+    width: 94px;
+    object-fit: contain;
+  }
+  .discuss-network .discuss-network-title p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .slide-image-right,
+  .slide-image-left {
+    display: none;
+  }
+  .network-sales-content {
+    height: 100%;
+    padding-bottom: 16px;
+  }
+  .network-sales-image {
+    display: block;
+  }
+  .network-sales-image img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+  }
+  .discussing-networking {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .discussing-row {
+    gap: 64px;
+  }
+  .forum-network-sales-section {
+    padding-bottom: 75px;
+  }
+  .accordion-smartOptimo .accordion-collapse .accordionBanner img {
+    height: 100%;
+  }
+  .speaker-section {
+    padding-bottom: 65px;
+  }
+  .speaker-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 12px;
+    row-gap: 12px;
+  }
+  .speaker-content .speaker-body h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .speaker-content .speaker-body p {
+    font-size: 14px;
+  }
+  .before-network-sales p {
+    font-size: 20px;
+    width: 100%;
+    line-height: normal;
+  }
+  .before-network-sales-section {
+    padding-bottom: 65px;
+  }
+  .accordion-smartOptimo {
+    margin-bottom: 29px;
+  }
+  .exhibitor-section {
+    padding-bottom: 55px;
+  }
+  .display-web {
+    display: none !important;
+  }
+  .display-mobile {
+    display: block !important;
+  }
+  .map-image-content {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 43px;
+    margin-top: 24px;
+  }
+  .map-image {
+    display: flex;
+    justify-content: center;
+    height: 314px;
+    width: 154px;
+  }
+  .map-image img {
+    height: 314px;
+    width: 154px;
+    object-fit: fill;
+  }
+  .location-details {
+    padding-top: 0px;
+    padding-bottom: 44px;
+  }
+  .location-details h5 {
+    font-size: 14px;
+  }
+  .location-details p {
+    font-size: 14px;
+  }
+  .company-info p {
+    font-size: 14px;
+  }
+  .two-dot-list {
+    font-size: 14px;
+  }
+  .company-section {
+    padding-bottom: 64px;
+  }
+  .accommodation-image-location img {
+    width: 67px;
+    height: 187px;
+    margin-left: 0px;
+  }
+  .accomodation-content-wrapper {
+    display: flex;
+  }
+  .accommodation-card .location-details h5 {
+    font-size: 18px;
+  }
+  .accommodation-card .location-details p {
+    font-size: 14px;
+  }
+  .accommodation-price-date p {
+    font-size: 14px;
+  }
+  .accommodation-card .company-info img {
+    display: none;
+  }
+  .accommodation-card .location-details {
+    padding-bottom: 24px;
+  }
+  .accommodation-price-date {
+    margin-top: 16px;
+  }
+  .pitches-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+    margin-top: 28px;
+  }
+  .pitches-image img {
+    width: 198px;
+    height: 140px;
+  }
+  .pitches-body .heading-title-h4-gray {
+    font-size: 24px;
+  }
+  .pitches-location-details {
+    font-size: 14px;
+  }
+  .motorhome-image {
+    display: none;
+  }
+  .motorhome-image-mobile {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 64px;
+  }
+  .motorhome-image-mobile img {
+    width: 205px;
+    height: 96px;
+  }
+  .motorhome-title {
+    padding-bottom: 32px;
+  }
+  .footer-social-link {
+    display: none;
+  }
+  .footer-list-social {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-list-social .footer-social-link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+  }
+  .footer-list-social .footer-list .footer-link {
+    margin: 32px 0px 0px 0px;
+    display: flex;
+  }
+  .copy-right {
+    display: none;
+  }
+  .footer-list {
+    margin-bottom: 32px;
+  }
+  .copy-right-text.mobile-view {
+    display: block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-size: 13px;
+  }
+  .footer-link p {
+    font-size: 14px;
+  }
+  .footer-link img {
+    height: 9px;
+  }
+  .footer-list h4 {
+    font-size: 14px;
+  }
+  .footer-list p {
+    font-size: 14px;
+  }
+  .footer-social-link img {
+    height: 32px;
+  }
+  .call-info img {
+    width: 76px;
+    height: 77px;
+  }
+  .call-description h4 {
+    font-size: 14px;
+  }
+  .call-description h5 {
+    font-size: 14px;
+  }
+}

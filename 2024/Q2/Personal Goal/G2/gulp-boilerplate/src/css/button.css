@@ -1,0 +1,62 @@
+@import url("./root.css");
+
+.custom-btn-ticket {
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  padding: 3px 50px;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  border: 10px solid var(--pink);
+  border-radius: 100px;
+  height: 85px;
+  width: 284px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: var(--textDanger);
+}
+
+.custom-btn-ticket::before,
+.custom-btn-ticket::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  border: 5px solid var(--lightDanger);
+  border-radius: 100px;
+}
+.btn-primary-outline {
+  padding: 8px 42px;
+  border: 2px solid var(--blue);
+  text-align: center;
+  font-size: 28px;
+  color: var(--blue);
+}
+.btn-primary {
+  padding: 8px 42px;
+  border: 2px solid var(--blue);
+  text-align: center;
+  font-size: 28px;
+  color: var(--white);
+  background-color: var(--blue);
+}
+.company-info .company-btn-link {
+  margin-top: 20px;
+}
+.company-info .company-btn-link a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  .btn-primary-outline {
+    height: 44px;
+  }
+  .btn-primary {
+    height: 44px;
+  }
+}
